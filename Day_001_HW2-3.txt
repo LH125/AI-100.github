@@ -1,0 +1,35 @@
+Homework 2:請上 Kaggle, 在 Competitions 或 Dataset 中找一組競賽或資料並寫下：
+
+1. 你選的這組資料為何重要
+Ans 1. 我選擇"APTOS 2019 Blindness Detection" Competitions，原因是這個問題如果能解開，對人類健康/預防醫學方面會有很大的幫助。
+
+2. 資料從何而來 (tips: 譬如提供者是誰、以什麼方式蒐集)
+Ans 2. Aravind technicians travel to these rural areas to capture images and then rely on highly trained doctors to review the images and provide diagnosis.
+
+3. 蒐集而來的資料型態為何
+Ans 3. Thousands of images collected in rural areas with diagnosis
+
+4. 這組資料想解決的問題如何評估
+Ans 4. 首先，需要先將圖像轉為資料檔，為了避免overfitting，採用8:1:1(training: cross-validation: prediction)的樣本分配。以預測靈敏度與精確度作為評估指標。
+
+
+Homework 3:想像你經營一個自由載客車隊，你希望能透過數據分析以提升業績，請你思考並描述你如何規劃整體的分析/解決方案：
+
+1. 核心問題為何 (tips：如何定義 「提升業績 & 你的假設」)
+Ans 1. 問題假設:業績可能受到 (1)載客路線 (2)顧客滿意度/回流/推薦 (3)天氣因素 (4)司機特質 (5)車子特徵 等因素影響，到底哪些因素對業績提升最有幫助?
+       業績定義:每日淨利潤。
+
+2. 資料從何而來 (tips：哪些資料可能會對你想問的問題產生影響 & 資料如何蒐集)
+Ans 2. 資料蒐集來源如下:
+       (1)載客路線: 在車上裝GPS取得相關數據。
+       (2)顧客滿意度/回流/推薦: 進行客戶問卷調查，並提供下次優惠。
+       (3)天氣因素: 可由氣象局網站取得。
+       (4)司機特質: 由車隊人事資料檔取得，例如:性別、年齡、教育程度、服務年資、人格特質等
+       (5)車子特徵: 由車隊總務資料檔取得，例如:車款、使用年數、已開公里數、顏色、上次保養時間等
+       (Y)淨利潤: 由車隊財務資料取得。
+
+3. 蒐集而來的資料型態為何
+Ans 3. 類別、連續型變項。
+
+4. 你要回答的問題，其如何評估 (tips：你的假設如何驗證)
+Ans 4. 尋找自變項與淨利潤相關的因素，並進行實驗性調整(數日)以驗證是否為真正的影響因素。
